@@ -18,3 +18,6 @@ As far as I can tell, all you need is the executable file. Run it.
 The source codes are also provided, if you're paranoid (like me) of random executables: I compiled it using G++.
 You shouldn't need any fancy libraries: everything outside of the standard C++ libraries are provided (as header files).
 
+Put all of the .hpp and .cpp files in the same directory: then, execute `compile.bat` from within that directory.
+You will need to have G++ or a similar compiler added as a PATH environment variable (or whatever it's called) to do this.
+You could also use Visual Studio or something. I'm not the boss of you.
