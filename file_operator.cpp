@@ -52,7 +52,10 @@ namespace dcrypt {
 			std::cout << std::endl << "What would you like to do with this file?" << std::endl
 				<< "1 -- EXIT (I CHANGED MY MIND!)"					 << std::endl
 				<< "2 -- PRINT FILE SIZE" 							 << std::endl
-				<< "3 -- CHARACTER FREQUENCY ANALYSIS" 				 << std::endl;
+				<< "3 -- CHARACTER FREQUENCY ANALYSIS" 				 << std::endl
+				<< "4 -- PRINT ORIGINAL FILE" 				 		 << std::endl
+				<< "5 -- PRINT ALTERED FILE" 				 		 << std::endl
+				<< "6 -- INITIAL CHARACTER ANALYSIS" 		 		 << std::endl;
 
 			std::cin >> choice;
 			std::cout << std::endl;
@@ -70,6 +73,22 @@ namespace dcrypt {
 				case 3:
 					std::cout << "Running analysis..." << std::endl;
 					storedfile.characterFrequencyAnalysis();
+					
+					break;				
+					
+				case 4:
+					std::cout << "Printing original file..." << std::endl;
+					storedfile.printOriginal();
+					break;				
+				
+				case 5:
+					std::cout << "Printing altered file..." << std::endl;
+					storedfile.printCurrentTemp();
+					break;
+					
+				case 6:
+					std::cout << "Running analysis..." << std::endl;
+					storedfile.initialCharacterAnalysis();
 					break;
 					
 				default:

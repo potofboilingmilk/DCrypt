@@ -17,6 +17,7 @@ namespace dcrypt {
 			StoredFile storedfile;
 			std::string target_file;
 			std::string data;	
+			std::string temp_str;
 			
 		private:
 			void parseInput();
