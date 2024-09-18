@@ -7,7 +7,9 @@ Currently, the features of the program are as follows:
 * Basic user I/O (via CLI)
 * Simple file transfer
 * Retaining file contents within an object (as to not rely on fstreams or similar for everything)
-* Character frequency analysis (halfway done).
+* Character frequency analysis.
+* Simple ciphertext decryption.
+* Tiny model training!
 
 I intend, at some point, to introduce some kind of neural network to supplement the character frequency analysis: trained on classic English literature, my hope is that it will be able to deduce which characters in the ciphertext may be vowels or consonants, based on their frequency as compared to the English language. I also want to try and use Zipf's law, but right now, the focal data I'm working with (which inspired the project) does not appear to use words.
 
