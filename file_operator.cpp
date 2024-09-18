@@ -52,10 +52,14 @@ namespace dcrypt {
 			std::cout << std::endl << "What would you like to do with this file?" << std::endl
 				<< "1 -- EXIT (I CHANGED MY MIND!)"					 << std::endl
 				<< "2 -- PRINT FILE SIZE" 							 << std::endl
-				<< "3 -- CHARACTER FREQUENCY ANALYSIS" 				 << std::endl
+				<< "3 -- PARSE FILE" 								 << std::endl
 				<< "4 -- PRINT ORIGINAL FILE" 				 		 << std::endl
 				<< "5 -- PRINT ALTERED FILE" 				 		 << std::endl
-				<< "6 -- INITIAL CHARACTER ANALYSIS" 		 		 << std::endl;
+				<< "6 -- INITIAL CHARACTER ANALYSIS" 		 		 << std::endl
+				<< "7 -- CREATE MODEL " 		 					 << std::endl
+				<< "8 -- LOAD MODEL " 			 					 << std::endl
+				<< "9 -- COMPARATIVE CHARACTER ANALYSIS " 			 << std::endl
+				<< "10 -- ATTEMPT DECRYPTION " 						 << std::endl;
 
 			std::cin >> choice;
 			std::cout << std::endl;
@@ -72,7 +76,7 @@ namespace dcrypt {
 					
 				case 3:
 					std::cout << "Running analysis..." << std::endl;
-					storedfile.characterFrequencyAnalysis();
+					storedfile.fileParse();
 					
 					break;				
 					
@@ -89,6 +93,26 @@ namespace dcrypt {
 				case 6:
 					std::cout << "Running analysis..." << std::endl;
 					storedfile.initialCharacterAnalysis();
+					break;	
+					
+				case 7:
+					std::cout << "Running..." << std::endl;
+					storedfile.createModel();
+					break;				
+					
+				case 8:
+					std::cout << "Running..." << std::endl;
+					storedfile.loadModel();
+					break;
+									
+				case 9:
+					std::cout << "Running..." << std::endl;
+					storedfile.comparativeCharacterAnalysis();
+					break;			
+					
+				case 10:
+					std::cout << "Running..." << std::endl;
+					storedfile.decryptCipher();
 					break;
 					
 				default:

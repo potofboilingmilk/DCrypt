@@ -6,7 +6,7 @@
 #include <fstream>
 
 namespace dcrypt {
-	class FileOperator {
+	class FileOperator {	
 		public:
 			FileOperator();
 			~FileOperator();
